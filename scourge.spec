@@ -44,12 +44,13 @@ autoreconf -i
 
 install -d %{buildroot}%{_datadir}/applications
 install -d %{buildroot}%{_gamesdatadir}/%{name}
+install -d %{buildroot}{%{_datadir}/applications,%{_datadir}/pixmaps}
 cp -rf %{name}_data/* %{buildroot}%{_gamesdatadir}/%{name}
 install assets/%{name}.desktop %{buildroot}%{_datadir}/applications
 install assets/%{name}.png %{buildroot}%{_datadir}/pixmaps
 
 desktop-file-install --vendor="" \
-	    --add-category="X-MandrivaLinux-MoreApplications-Games-Adventure" \
+	    --add-category="X-MandrivaLinux-MoreApplications-Games-Adventure;" \
 	    --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 %find_lang %{name}
