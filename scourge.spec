@@ -1,9 +1,9 @@
 Summary:	Scourge is a roguelike game with a 3D user interface
 Name:		scourge
 Version:	0.18
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
-Group:		Games
+Group:		Games/Adventure
 Url:		http://scourge.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.bz2
 Source1:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.data.tar.bz2
