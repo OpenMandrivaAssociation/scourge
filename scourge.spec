@@ -11,7 +11,6 @@ BuildRequires:	SDL-devel
 BuildRequires:	SDL_ttf-devel
 BuildRequires:	SDL_mixer-devel
 Requires:	%{name}-data
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 S.C.O.U.R.G.E. is a roguelike game with a 3D user interface.
