@@ -1,4 +1,4 @@
-Summary:	Scourge is a roguelike game with a 3D user interface
+Summary:	Roguelike game with a 3D user interface
 Name:		scourge
 Version:	0.19
 Release:	%mkrel 1
