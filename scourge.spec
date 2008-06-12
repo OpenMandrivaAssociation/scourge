@@ -46,11 +46,15 @@ install assets/%{name}.png %{buildroot}%{_datadir}/pixmaps
 
 %find_lang %{name}
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
+%endif
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
