@@ -10,6 +10,8 @@ BuildRequires:	mesa-common-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_ttf-devel
 BuildRequires:	SDL_mixer-devel
+BuildRequires:	SDL_image-devel
+BuildRequires:	SDL_net-devel
 Requires:	%{name}-data
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
