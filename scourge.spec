@@ -1,11 +1,11 @@
 Summary:	Roguelike game with a 3D user interface
 Name:		scourge
-Version:	0.19
-Release:	%mkrel 2
+Version:	0.20
+Release:	%mkrel 1
 License:	GPL
 Group:		Games/Adventure
 Url:		http://scourge.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.bz2
+Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.gz
 BuildRequires:	mesa-common-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_ttf-devel
