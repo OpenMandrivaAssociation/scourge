@@ -6,6 +6,7 @@ License:	GPL
 Group:		Games/Adventure
 Url:		http://scourge.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.gz
+Patch0:		scourge-0.20-gcc43.patch
 BuildRequires:	mesa-common-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_ttf-devel
@@ -22,6 +23,7 @@ kill enemies, gain levels, etc.
 
 %prep
 %setup -qn %{name}
+%patch0 -p0
 
 %build
 autoreconf -i
