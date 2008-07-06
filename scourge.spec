@@ -4,7 +4,7 @@ Version:	0.20
 Release:	%mkrel 1
 License:	GPL
 Group:		Games/Adventure
-Url:		http://scourge.sourceforge.net/
+Url:		http://scourgeweb.org/
 Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.gz
 Patch0:		scourge-0.20-gcc43.patch
 BuildRequires:	mesa-common-devel
