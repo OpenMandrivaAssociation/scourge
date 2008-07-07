@@ -1,7 +1,7 @@
 Summary:	Roguelike game with a 3D user interface
 Name:		scourge
 Version:	0.20
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		Games/Adventure
 Url:		http://scourgeweb.org/
@@ -13,7 +13,7 @@ BuildRequires:	SDL_ttf-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_net-devel
-Requires:	%{name}-data
+Requires:	%{name}-data = %{version}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -34,6 +34,7 @@ autoreconf -i
 	--with-data-dir=%{_gamesdatadir}/%{name} \
 	--disable-rpath \
 	--enable-optimized \
+	--enable-threads=pth \
 	--enable-stencil-buffer
 
 %make
