@@ -1,11 +1,12 @@
 Summary:	Roguelike game with a 3D user interface
 Name:		scourge
 Version:	0.21.1
-Release:	%mkrel 1
-License:	GPL
+Release:	%mkrel 2
+License:	GPLv2+
 Group:		Games/Adventure
 Url:		http://scourgeweb.org/
 Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.lzma
+Patch0:		scourge-0.21.1-fix-desktop-file.patch
 BuildRequires:	mesa-common-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_ttf-devel
@@ -22,6 +23,7 @@ kill enemies, gain levels, etc.
 
 %prep
 %setup -qn %{name}
+%patch0 -p1
 
 %build
 %configure2_5x \
@@ -63,5 +65,5 @@ install assets/%{name}.png %{buildroot}%{_datadir}/pixmaps
 %files -f %{name}.lang
 %doc AUTHORS README ChangeLog
 %{_gamesbindir}/%{name}
-%{_datadir}/applications/*.desktop
+%attr(644,root,root) %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.png
