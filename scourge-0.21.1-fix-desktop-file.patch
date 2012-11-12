@@ -1,0 +1,11 @@
+Index: scourge/assets/scourge.desktop
+===================================================================
+--- scourge/assets/scourge.desktop
++++ scourge/assets/scourge.desktop	2009-05-13 17:57:05.000000000 +0200
+@@ -10,5 +10,4 @@
+ Exec=scourge
+ Icon=scourge
+ Terminal=false
+-Encoding=UTF-8
+-Categories=Game;ArcadeGame;RolePlaying;
++Categories=Game;AdventureGame;RolePlaying;
