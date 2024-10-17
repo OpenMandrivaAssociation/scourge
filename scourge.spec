@@ -4,7 +4,7 @@ Version:	0.21.1
 Release:	%mkrel 2
 License:	GPLv2+
 Group:		Games/Adventure
-Url:		http://scourgeweb.org/
+Url:		https://scourgeweb.org/
 Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.lzma
 Patch0:		scourge-0.21.1-fix-desktop-file.patch
 BuildRequires:	mesa-common-devel
