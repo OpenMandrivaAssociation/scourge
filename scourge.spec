@@ -7,6 +7,11 @@ Group:		Games/Adventure
 Url:		https://scourgeweb.org/
 Source0:	http://downloads.sourceforge.net/scourge/%{name}-%{version}.src.tar.lzma
 Patch0:		scourge-0.21.1-fix-desktop-file.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mesa-common-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_ttf-devel
