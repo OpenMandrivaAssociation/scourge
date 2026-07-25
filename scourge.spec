@@ -1,7 +1,7 @@
 Summary:	Roguelike game with a 3D user interface
 Name:		scourge
 Version:	0.21.1
-Release:	%mkrel 2
+Release:	3
 License:	GPLv2+
 Group:		Games/Adventure
 Url:		https://scourgeweb.org/
